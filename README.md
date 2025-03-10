@@ -34,6 +34,9 @@ Não há necessidade de instalação de dependências. Basta clonar o repositór
 
 # Fontes de Referência
 
+NASA API - A ideia inicial surgiu da API da NASA, com a intenção de criar uma galeria com imagens do sistema solar. 
+No entanto, devido a algumas limitações dessa API, optou-se pelo uso da Unsplash API para maior variedade e flexibilidade no acesso às imagens.
+
 Unsplash API
 
 MDN Web Docs
