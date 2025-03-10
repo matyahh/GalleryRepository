@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Triodion&display=swap" rel="stylesheet">
+  <title>Galeria de Imagens Dinâmica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <!-- Logo da Unsplash com link -->
+  <div class="logo-container">
+    <a href="https://unsplash.com" target="_blank">
+      <img src="logo.jpeg" alt="Logo da Unsplash" class="logo">
+    </a>
+  </div>
+
+  <div class="container">
+    <h1>Galeria de Imagens Dinâmica</h1>
+    <!-- Texto explicativo -->
+    <p class="intro-text">
+      Bem-vindo à Galeria Dinâmica! Aqui você pode buscar imagens incríveis, adicioná-las à sua galeria pessoal,
+      baixar suas favoritas e muito mais. Comece digitando um termo na barra de busca acima e explore as imagens disponíveis.
+      Clique em uma imagem para adicioná-la à sua galeria ou visualize-a em tamanho maior. Divirta-se!
+    </p>
+    
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Buscar imagens...">
+      <button id="search-button">Buscar</button>
+    </div>
+
+
+    <div class="section">
+      <h2>Imagens Pesquisadas</h2>
+      <div id="search-results" class="gallery"></div>
+    </div>
+
+
+    <div class="section personal-gallery">
+      <h2>Minha Galeria</h2>
+      <div id="personal-gallery" class="gallery"></div>
+    </div>
+  </div>
+
+<!-- Paginação -->
+<div class="pagination">
+    <button id="prev-page">Anterior</button>
+    <span id="current-page">1</span>
+    <button id="next-page">Próximo</button>
+  </div>
+
+>
+<div id="image-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modal-image" src="" alt="Imagem Ampliada">
+    </div>
+  </div>
+
+
+<div id="skeleton-loading" class="gallery">
+    <div class="skeleton-card"></div>
+    <div class="skeleton-card"></div>
+    <div class="skeleton-card"></div>
+    <div class="skeleton-card"></div>
+  </div>
+
+  <!-- Botão "Voltar ao Topo" -->
+<button id="back-to-top" title="Voltar ao topo">↑</button>
+
+<!-- Botão de Tema Escuro -->
+<button id="toggle-dark-mode">🌙</button>
+
+  <!-- Modal para editar título -->
+  <div id="edit-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Editar Título</h3>
+      <input type="text" id="edit-title-input" placeholder="Novo título">
+      <button id="save-edit-button">Salvar</button>
+    </div>
+  </div>
+
+<footer>
+    <p>Desenvolvido por Mateus Henrique | Powered by <a href="https://unsplash.com" target="_blank">Unsplash API</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

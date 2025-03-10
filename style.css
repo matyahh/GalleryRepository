@@ -1,0 +1,402 @@
+/* Estilos Gerais */
+body {
+    font-family: "Bebas Neue", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 30px;
+  }
+  
+  .triodion-regular {
+    font-family: "Triodion", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+  /* Logo da Unsplash */
+  .logo-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+  
+  .logo {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px; /* Espaço para a logo */
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  #search-input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #search-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #search-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Seções */
+  .section {
+    background-color: #ffe6e6; /* Cor de fundo rosa claro */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .personal-gallery {
+    background-color: #fff0f0; /* Cor de fundo rosa mais claro */
+  }
+  
+  /* Galeria */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .gallery .image-card {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+  
+  .gallery .image-card.selected {
+    border-color: #007bff;
+    transform: scale(1.05);
+  }
+  
+  .gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+  }
+  
+  .gallery img:hover {
+    opacity: 0.8;
+  }
+  
+  .gallery .image-card p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .gallery .image-card button {
+    padding: 8px 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px;
+  }
+  
+  .gallery .image-card button.delete-button {
+    background-color: #ff4d4d;
+  }
+  
+  .gallery .image-card button.delete-button:hover {
+    background-color: #cc0000;
+  }
+  
+  .gallery .image-card button.download-button {
+    background-color: #007bff;
+  }
+  
+  .gallery .image-card button.download-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .close {
+    float: right;
+    cursor: pointer;
+  }
+
+  /* Estilos do Formulário de Busca */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  #search-input {
+    padding: 12px;
+    width: 400px; 
+    border: 2px solid #ccc;
+    border-radius: 25px; 
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  #search-input:focus {
+    border-color: #007bff; 
+  }
+  
+  #search-button {
+    padding: 12px 24px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px; 
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    transition: background-color 0.3s;
+  }
+  
+  #search-button:hover {
+    background-color: #0056b3;
+  }
+  
+ 
+  #search-button::before {
+    content: "🔍"; 
+  }
+
+  
+.gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+    padding: 20px;
+  }
+
+ 
+#back-to-top {
+    display: none; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #back-to-top:hover {
+    background-color: #0056b3;
+  }
+
+  /* Tema Escuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  body.dark-mode .section {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+  
+  body.dark-mode .gallery .image-card {
+    background-color: #2c2c2c;
+    border-color: #444;
+  }
+  
+  body.dark-mode #search-input {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+  }
+  
+  body.dark-mode #search-button {
+    background-color: #555;
+  }
+  
+  body.dark-mode #search-button:hover {
+    background-color: #777;
+  }
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .gallery .image-card {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  /* Responsividade */
+@media (max-width: 768px) {
+    #search-input {
+      width: 100%;
+    }
+  
+    .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  
+    .logo {
+      width: 100px; 
+    }
+  }
+
+  
+.feedback-message {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    animation: fadeInOut 2s ease-in-out;
+  }
+  
+  @keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    10%, 90% { opacity: 1; }
+  }
+
+  /* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #cb8585;
+    color: white;
+    margin-top: 40px;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: underline;
+  }
+
+ 
+.skeleton-card {
+    width: 200px;
+    height: 200px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+
+#image-modal .modal-content {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  #modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pagination button:hover {
+    background-color: #0056b3;
+  }
+  /* Texto Explicativo */
+.intro-text {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  margin: 20px auto;
+  max-width: 800px;
+  line-height: 1.6;
+}
