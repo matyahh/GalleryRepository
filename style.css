@@ -1,4 +1,4 @@
-/* Estilos Gerais */
+
 body {
     font-family: "Bebas Neue", sans-serif;
     background-color: #f4f4f4;
@@ -14,7 +14,7 @@ body {
   }
   
 
-  /* Logo da Unsplash */
+  
   .logo-container {
     position: fixed;
     top: 20px;
@@ -23,14 +23,14 @@ body {
   }
   
   .logo {
-    width: 150px; /* Ajuste o tamanho conforme necessário */
+    width: 150px;
     height: auto;
   }
   
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 80px; /* Espaço para a logo */
+    padding-top: 80px;
   }
   
   h1, h2 {
@@ -64,9 +64,9 @@ body {
     background-color: #0056b3;
   }
   
-  /* Seções */
+
   .section {
-    background-color: #ffe6e6; /* Cor de fundo rosa claro */
+    background-color: #ffe6e6; 
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
@@ -74,10 +74,10 @@ body {
   }
   
   .personal-gallery {
-    background-color: #fff0f0; /* Cor de fundo rosa mais claro */
+    background-color: #fff0f0; 
   }
   
-  /* Galeria */
+  
   .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -143,7 +143,7 @@ body {
     background-color: #0056b3;
   }
   
-  /* Modal */
+  
   .modal {
     display: none;
     position: fixed;
@@ -169,7 +169,7 @@ body {
     cursor: pointer;
   }
 
-  /* Estilos do Formulário de Busca */
+ 
 .search-container {
     display: flex;
     justify-content: center;
@@ -257,7 +257,7 @@ body {
     background-color: #0056b3;
   }
 
-  /* Tema Escuro */
+
 body.dark-mode {
     background-color: #121212;
     color: #ffffff;
@@ -297,7 +297,7 @@ body.dark-mode {
     animation: fadeIn 0.5s ease-in-out;
   }
 
-  /* Responsividade */
+
 @media (max-width: 768px) {
     #search-input {
       width: 100%;
@@ -330,7 +330,7 @@ body.dark-mode {
     10%, 90% { opacity: 1; }
   }
 
-  /* Rodapé */
+ 
 footer {
     text-align: center;
     padding: 20px;
@@ -391,7 +391,7 @@ footer {
   .pagination button:hover {
     background-color: #0056b3;
   }
-  /* Texto Explicativo */
+ 
 .intro-text {
   text-align: center;
   font-size: 18px;
